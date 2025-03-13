@@ -25,18 +25,20 @@ app.get('/crm-card', (req, res) => {
 
     // Estructura de la CRM Card
     const cardData = {
-        "results": [
-            { 
-                "objectId": contactId,
-                "title": "📄 Generación de Documentos",
-                "primaryAction": {
-                    "type": "ACTION_HOOK",
-                    "httpMethod": "POST",
-                    "uri": "https://hubspot-crm-card.onrender.com/generar-documento",
-                    "label": "📄 Generar Documento"
-                }
-            }
-        ]
+    "results": [
+        { 
+            "objectId": contactId,
+            "title": "📄 Generación de Documentos"          
+        }
+    ],
+    
+    "primaryAction": {
+        "type": "ACTION_HOOK",
+        "httpMethod": "POST",
+        "uri": "https://script.google.com/macros/s/AKfycbx1wr1Jbcu6U8k5NsIGHuRpZKqQfUDyiSe6mGDg0LB_/exec", 
+        "label": "📄 Generar Documento",
+        "associatedObjectProperties": []
+    }
     };
 
     console.log("✅ CRM Card generada correctamente:", JSON.stringify(cardData, null, 2));
