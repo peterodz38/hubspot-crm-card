@@ -35,7 +35,7 @@ app.get('/crm-card', (req, res) => {
     "primaryAction": {
         "type": "ACTION_HOOK",
         "httpMethod": "POST",
-        "uri": "https://script.google.com/macros/s/AKfycbwrZenitU1fj7xoDc0A8WT2GWATKTbR4lvrCgJupjM/dev", 
+        "uri": "https://script.google.com/macros/s/AKfycbxBV5XSHcsRQWnTmoBKhbYze1JGYxyjhNMk4Um5_lt6RPh8kFic8L8DRmIExutuY-2j/exec", 
         "label": "📄 Generar Documento",
         "associatedObjectProperties": []
     }
